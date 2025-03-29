@@ -17,8 +17,7 @@ def getResume():
     uploaded_file = st.file_uploader("Choose a file")
 
     
-    temp_Txt = f.open("temp.txt", "w")
-    temp_Path = os.path.dirname("temp.txt")
+    temp_Txt = open("temp.txt", "w")
 
     fileName = ""
 
@@ -26,7 +25,7 @@ def getResume():
     if uploaded_file is not None:
         fileName = uploaded_file.name
         # rawData is a string
-        rawData = read_and_print_file(uploaded_file, temp_Path)
+        rawData = read_and_print_file(uploaded_file, temp_Txt)
 
         # myResume = theirFunction(input)
         # also, return myResume as a tex file
@@ -82,7 +81,6 @@ read_and_write_file(myModelOutput, newResume)
 # put in latexFile
 
 # filler data (delete later)
-fileName = "myResume"
 
 st.subheader("Step 3. Download your tailored resume")
 downloadFile(fileName, isTex=True)
