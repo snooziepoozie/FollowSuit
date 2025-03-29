@@ -54,7 +54,6 @@ st.header("A resume tailoring service")
 
 # getting the resume
 st.subheader("Step 1. Upload your resume")
-getResume()
 myResumeData, fileName = getResume()
 
 # getting the job description
