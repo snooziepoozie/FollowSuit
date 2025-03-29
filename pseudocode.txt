@@ -1,0 +1,2 @@
+1. read latex files and return parameters 
+(experience, bullet points), (projects, bullet points), (skills, bullet points)
